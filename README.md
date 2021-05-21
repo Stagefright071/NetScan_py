@@ -17,6 +17,8 @@ To install dependancies, run
 ```
 python3 -m pip install -r requirements.txt
 ```
+Run the above as root as well.
+
 This will install all python dependancies
 
 Then, to run, execute python3 netscan.py as root or administrator
