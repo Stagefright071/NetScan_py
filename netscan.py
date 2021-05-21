@@ -88,3 +88,5 @@ elif choice == "3":
         print(mac.lookup(mac_address))
 else:
     print("Thats not a valid input, Please chose either 1 or 2!")
+
+input("Press [ENTER] to exit")
