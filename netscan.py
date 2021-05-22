@@ -89,4 +89,4 @@ elif choice == "3":
 else:
     print("Thats not a valid input, Please chose either 1 or 2!")
 
-input("Press [ENTER] to exit")
+input("\nPress [ENTER] to exit")
