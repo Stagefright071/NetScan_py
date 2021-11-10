@@ -2,23 +2,112 @@
 This is a network scanner that finds out:
 1. IP address
 2. MAC address
-3. Vendor
+3. Vendor Manufacturer)
 
-![image](https://user-images.githubusercontent.com/71056504/119103594-f9fd6400-ba38-11eb-9742-c05c881d05cb.png)
+```
+╭─stagefright@Aspire ~/Projects/NetScan_py ‹main› 
+╰─$ sudo python3 netscan.py                                                                                                                               
+[sudo] password for stagefright: 
 
-![image](https://user-images.githubusercontent.com/71056504/119103719-19948c80-ba39-11eb-933e-a94c6aa0d2d4.png)
+███╗░░██╗███████╗████████╗░██████╗░█████╗░░█████╗░███╗░░██╗
+████╗░██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗██╔══██╗████╗░██║
+██╔██╗██║█████╗░░░░░██║░░░╚█████╗░██║░░╚═╝███████║██╔██╗██║
+██║╚████║██╔══╝░░░░░██║░░░░╚═══██╗██║░░██╗██╔══██║██║╚████║
+██║░╚███║███████╗░░░██║░░░██████╔╝╚█████╔╝██║░░██║██║░╚███║
+╚═╝░░╚══╝╚══════╝░░░╚═╝░░░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝
 
-![image](https://user-images.githubusercontent.com/71056504/119103793-303ae380-ba39-11eb-8c67-4e20c8315119.png)
 
+Would you like to:
 
-!!! WINDOWS REQUIRES WINPCAP INSTALLED !!!
+1. Scan an IP address
 
-To install dependancies, run
+2. Scan an IP range
+
+3. Update vendor sources (Requires Wifi)
+
+> 2
+
+██╗██████╗░  ██████╗░░█████╗░███╗░░██╗░██████╗░███████╗
+██║██╔══██╗  ██╔══██╗██╔══██╗████╗░██║██╔════╝░██╔════╝
+██║██████╔╝  ██████╔╝███████║██╔██╗██║██║░░██╗░█████╗░░
+██║██╔═══╝░  ██╔══██╗██╔══██║██║╚████║██║░░╚██╗██╔══╝░░
+██║██║░░░░░  ██║░░██║██║░░██║██║░╚███║╚██████╔╝███████╗
+╚═╝╚═╝░░░░░  ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚══════╝
+
+Enter an IP Range > 192.168.1.0/24
+
+IP Range is valid, script can continue...
+
+IP			MAC			Vendor
+------------------------------------------------------------------
+192.168.1.254		00:11:22:33:44:55	CIG SHANGHAI CO LTD
+------------------------------------------------------------------
+192.168.1.48		00:11:22:33:44:66	Intel Corporate
+------------------------------------------------------------------
+192.168.1.27		00:11:22:33:44:77	Zebra Technologies Inc.
+------------------------------------------------------------------
+192.168.1.12		00:11:22:33:44:88	Espressif Inc.
+------------------------------------------------------------------
+192.168.1.13		00:11:22:33:44:99	Espressif Inc.
+------------------------------------------------------------------
+192.168.1.28		00:11:22:33:44:00	Amazon Technologies Inc.
+
+Press [ENTER] to exit
+
+```
+
+<!-- windows requires npcap -->
+
+# Running
+
+## Linux
+> Install python and git
+```
+Debian / Ubuntu based: $ sudo apt install python3 python3-pip git
+
+Arch based: $ sudo pacman -S python python-pip
+```
+
+> Clone git repository
+```
+git clone https://github.com/Stagefright071/NetScan_py
+```
+
+> Install script requirements
 ```
 python3 -m pip install -r requirements.txt
 ```
-Run the above as root as well.
 
-This will install all python dependancies
+> Run the script as **root**
+```
+sudo python3 netscan.py
+```
 
-Then, to run, execute python3 netscan.py as root or administrator
+## Windows
+
+> Install python, git and npcap
+
+Download and install python from https://python.org
+
+Download and install git from https://git-scm.com
+
+Download and install npcap from https://nmap.org/npcap
+
+### **Do this in a command prompt running as administrator**
+
+> Clone git repository
+```
+git clone https://github.com/Stagefright071/NetScan_py
+```
+
+> Install script requirements
+```
+py -m pip install -r requirements.txt
+```
+
+> Run the script as **administrator**
+```
+py netscan.py
+```
+
+# Thanks!
