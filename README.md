@@ -102,12 +102,12 @@ git clone https://github.com/Stagefright071/NetScan_py
 
 > Install script requirements
 ```
-py -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 > Run the script as **administrator**
 ```
-py netscan.py
+python netscan.py
 ```
 
 # Thanks!
