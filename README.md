@@ -5,9 +5,9 @@ This is a network scanner that finds out:
 3. Vendor Manufacturer)
 
 ```
-╭─stagefright@Aspire ~/Projects/NetScan_py ‹main› 
+╭─compromyse@Aspire ~/Projects/NetScan_py ‹main› 
 ╰─$ sudo python3 netscan.py                                                                                                                               
-[sudo] password for stagefright: 
+[sudo] password for compromyse: 
 
 ███╗░░██╗███████╗████████╗░██████╗░█████╗░░█████╗░███╗░░██╗
 ████╗░██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗██╔══██╗████╗░██║
@@ -70,7 +70,7 @@ Arch based: $ sudo pacman -S python python-pip
 
 > Clone git repository
 ```
-git clone https://github.com/Stagefright071/NetScan_py
+git clone https://github.com/compromyse/NetScan_py
 ```
 
 > Install script requirements
@@ -97,7 +97,7 @@ Download and install npcap from https://nmap.org/npcap
 
 > Clone git repository
 ```
-git clone https://github.com/Stagefright071/NetScan_py
+git clone https://github.com/compromyse/NetScan_py
 ```
 
 > Install script requirements
